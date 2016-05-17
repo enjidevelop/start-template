@@ -1,0 +1,58 @@
+// COLORS
+// -----------------------------------
+$black: #000;
+$white: #fff;
+$main: #51b1ad;
+$gray: #eee;
+$base-font-color: $black;
+$red: #f00;
+
+// TYPOGRAPHY
+// -----------------------------------
+// Include fonts
+@include font(opensans, 'opensans_regular_cyrillic/OpenSans-Regular-webfont');
+@include font(opensans-bold, 'opensans_bold_cyrillic/OpenSans-Bold-webfont');
+@include font(opensans-italic, 'opensans_italic_cyrillic/OpenSans-Italic-webfont');
+@include font(ruble, 'ruble/ruble-webfont');
+
+// Fonts name
+$font: 'opensans', sans-serif;
+$font-bold: 'opensans-bold', sans-serif;
+$font-italic: 'opensans-italic', sans-serif;
+$font-ruble: 'ruble', sans-serif;
+
+// Font size
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+// GRID
+// -----------------------------------
+$columns: 12;
+$column-width: 60px;
+$gutter-width: 20px;
+
+
+// BREAKPOINTS
+// -----------------------------------
+$small-upper-bound: 640px;
+$medium-upper-bound: 1024px;
+$big-upper-bound: 1200px;
+$large-upper-bound: 1440px;
+$xlarge-upper-bound: 1920px;
+
+
+// Z-INDEX MANAGEMENT
+// -----------------------------------
+$z-layers: (
+    'hide': -1,
+    'zero': 0,
+    'default': 1,
+    'nav': 2,
+);
+
+// GLOBALL SETTINGS
+// -----------------------------------
+
+// Transition default property
+$gl-trs-duration: .3s;
+$gl-trs-function: ease;
